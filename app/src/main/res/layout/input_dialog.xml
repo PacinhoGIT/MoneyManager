@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/inputNazwaTV"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/inputShowNazwa"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/inputKategoriaTV"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/inputShowKategoria"
+        android:layout_marginLeft="30dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/inputDataTV"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/inputShowData"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:text="Nazwa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/inputNazwaTV"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/inputKategoriaTV"
+        android:layout_alignStart="@+id/inputKategoriaTV" />
+
+    <TextView
+        android:text="Data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:id="@+id/inputDataTV"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_below="@+id/inputKategoriaTV"
+        android:layout_alignLeft="@+id/inputNazwaTV"
+        android:layout_alignStart="@+id/inputNazwaTV" />
+
+    <TextView
+        android:text="Kategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/inputKategoriaTV"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/inputNazwaTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Koszt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/inputKosztTV"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_below="@+id/inputDataTV"
+        android:layout_alignLeft="@+id/inputDataTV"
+        android:layout_alignStart="@+id/inputDataTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputShowKoszt"
+        android:textAlignment="center"
+        android:layout_alignBottom="@+id/inputKosztTV"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

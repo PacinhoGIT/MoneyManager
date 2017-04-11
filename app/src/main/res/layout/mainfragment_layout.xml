@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nav_main_layout">
+
+
+    <TextView
+        android:text="Nazwa            Rodzaj             Data           Koszt(PLN)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/listaKolumn"
+        android:layout_below="@+id/ostatniWydatekTV"
+        android:textStyle="bold|italic"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Laczny koszt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sumaWydatkow"
+        android:textSize="24sp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/ostatniWydatekShow"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|italic" />
+
+
+    <TextView
+        android:text="Ostatni wydatek "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:id="@+id/ostatniWydatekTV"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/textClock"
+        android:layout_centerHorizontal="true" />
+
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:format24Hour="yyy/MM/dd          HH:mm:ss"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold|italic"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        tools:targetApi="jelly_bean_mr1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ostatniWydatekShow"
+        android:textSize="17sp"
+        tools:textStyle="bold"
+        android:text="Brak wpisow !"
+        android:textStyle="bold"
+        android:layout_marginTop="31dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/listaKolumn"
+        android:textAlignment="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sumaWydatkowShow"
+        android:textSize="24sp"
+        android:text="Brak wpisow !"
+        android:layout_marginTop="44dp"
+        android:textStyle="bold|italic"
+        android:textColor="#FFED251E"
+        android:textAlignment="center"
+        android:layout_below="@+id/sumaWydatkow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

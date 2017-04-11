@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MoneyManager</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="dodaj">Dodaj wydatek</string>
+    <string name="nazwa">Nazwa</string>
+    <string name="rodzaj">Rodzaj</string>
+    <string name="data">Data</string>
+    <string name="koszt">Koszt</string>
+    <string name="dodajbtn">Dodaj</string>
+    <string name="listawydatkow">Lista wszystkich wydatkow</string>
+    <string name="wybierzDate">Wybierz Date</string>
+    <string name="suma">Suma :</string>
+</resources>

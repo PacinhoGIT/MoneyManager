@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/editNazwaET"
+        android:layout_alignBaseline="@+id/editNazwaTV"
+        android:layout_alignBottom="@+id/editNazwaTV"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editKategoriaET"
+        android:layout_alignBaseline="@+id/editKategoriaTV"
+        android:layout_alignBottom="@+id/editKategoriaTV"
+        android:layout_alignLeft="@+id/editNazwaET"
+        android:layout_alignStart="@+id/editNazwaET"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editDataET"
+        android:layout_below="@+id/editKategoriaET"
+        android:layout_alignLeft="@+id/editKategoriaET"
+        android:layout_alignStart="@+id/editKategoriaET"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="80dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_day"
+        android:background="@android:drawable/ic_menu_day"
+        android:layout_alignTop="@+id/editDataET"
+        android:layout_alignRight="@+id/editKategoriaET"
+        android:layout_alignEnd="@+id/editKategoriaET"
+        android:id="@+id/imgButtonEditCalendar" />
+
+    <TextView
+        android:text="Koszt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgButtonEditCalendar"
+        android:layout_alignRight="@+id/editNazwaTV"
+        android:layout_alignEnd="@+id/editNazwaTV"
+        android:layout_marginTop="30dp"
+        android:id="@+id/editKosztTV" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/imgButtonEditCalendar"
+        android:layout_alignRight="@+id/imgButtonEditCalendar"
+        android:layout_alignEnd="@+id/imgButtonEditCalendar"
+        android:layout_marginTop="20dp"
+        android:id="@+id/editKosztET"
+        android:inputType="number|numberSigned|numberDecimal|numberPassword|phone" />
+
+    <TextView
+        android:text="Nazwa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="41dp"
+        android:id="@+id/editNazwaTV"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Kategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:id="@+id/editKategoriaTV"
+        android:layout_below="@+id/editNazwaET"
+        android:layout_alignLeft="@+id/editNazwaTV"
+        android:layout_alignStart="@+id/editNazwaTV" />
+
+    <TextView
+        android:text="Data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editDaataTV"
+        android:layout_alignBaseline="@+id/editDataET"
+        android:layout_alignBottom="@+id/editDataET"
+        android:layout_alignLeft="@+id/editKosztTV"
+        android:layout_alignStart="@+id/editKosztTV" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editSpinner"
+        android:layout_alignTop="@+id/editKategoriaET"
+        android:layout_alignLeft="@+id/editKategoriaET"
+        android:layout_alignStart="@+id/editKategoriaET"
+        android:layout_alignRight="@+id/editKategoriaET"
+        android:layout_alignEnd="@+id/editKategoriaET" />
+
+</RelativeLayout>

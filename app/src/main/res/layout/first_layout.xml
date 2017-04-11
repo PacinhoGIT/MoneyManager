@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="@string/koszt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kosztTV"
+        android:textSize="22sp"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/dataED"
+        android:layout_alignLeft="@+id/dataTV"
+        android:layout_alignStart="@+id/dataTV"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/rodzajED"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/nazwaED"
+        android:layout_alignLeft="@+id/nazwaED"
+        android:layout_alignStart="@+id/nazwaED"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/kosztED"
+        android:layout_alignBaseline="@+id/kosztTV"
+        android:layout_alignBottom="@+id/kosztTV"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:inputType="number|numberSigned|numberDecimal|numberPassword|phone"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_alignStart="@+id/spinner" />
+
+    <Button
+        android:text="@string/dodajbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/dodajBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/nazwa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:id="@+id/nazwaTV"
+        android:textSize="22sp"
+        android:layout_below="@+id/pokazWydatek"
+        android:layout_alignLeft="@+id/rodzajTV"
+        android:layout_alignStart="@+id/rodzajTV"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@android:drawable/ic_menu_day"
+        android:background="#FFABDDA4"
+        android:id="@+id/imageButton"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/rodzajED"
+        android:layout_alignBottom="@+id/dataED"
+        android:layout_alignTop="@+id/dataED"
+        android:theme="@android:style/Widget.ImageWell"
+        android:layout_toRightOf="@+id/rodzajED"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/dataED"
+        android:visibility="visible"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBaseline="@+id/dataTV"
+        android:layout_alignBottom="@+id/dataTV"
+        android:layout_marginRight="50dp"
+        android:textAlignment="center"
+        android:layout_alignLeft="@+id/rodzajED"
+        android:layout_alignStart="@+id/rodzajED" />
+
+    <TextView
+        android:text="Kategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rodzajTV"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/dataTV"
+        android:layout_alignTop="@+id/spinner"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:text="@string/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dataTV"
+        android:textSize="22sp"
+        android:layout_marginTop="42dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/rodzajED"
+        android:layout_alignRight="@+id/rodzajTV"
+        android:layout_alignEnd="@+id/rodzajTV"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/dodaj"
+        android:id="@+id/pokazWydatek"
+        android:layout_marginTop="19dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/rodzajTV"
+        android:layout_toEndOf="@+id/rodzajTV" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:popupBackground="#FFABDDA4"
+        android:textAlignment="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/rodzajED"
+        android:layout_alignLeft="@+id/rodzajED"
+        android:layout_alignStart="@+id/rodzajED" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/nazwaED"
+        android:textAlignment="center"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/nazwaTV"
+        android:layout_alignLeft="@+id/pokazWydatek"
+        android:layout_alignStart="@+id/pokazWydatek"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:layout_alignTop="@+id/pokazWydatek"
+        android:layout_alignRight="@+id/dataTV"
+        android:layout_alignEnd="@+id/dataTV"
+        android:id="@+id/imageView2" />
+
+</RelativeLayout>

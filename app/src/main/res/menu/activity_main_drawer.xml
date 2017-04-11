@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFABDDA4">
+
+
+
+
+    <group android:id="@+id/group1"
+        android:background="#FFABDDA4">
+        <item
+            android:id="@+id/nav_first_layout"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="Dodaj wydatek" />
+        <item
+            android:id="@+id/nav_second_layout"
+            android:icon="@android:drawable/ic_menu_sort_by_size"
+            android:title="Lista wydatków" />
+        <item
+            android:id="@+id/nav_third_layout"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="Szukaj wydatkow" />
+
+        <item
+            android:id="@+id/nav_four_layout"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Dodaj kategorie" />
+
+    </group>
+
+    <group android:id="@+id/group2"
+        android:background="#FFABDDA4">
+
+            <item
+                android:id="@+id/o_programie"
+                android:icon="@android:drawable/ic_dialog_info"
+                android:title="O programie" />
+             <item
+                android:id="@+id/exit"
+                android:icon="@android:drawable/btn_dialog"
+                android:title="Exit" />
+
+    </group>
+
+</menu>

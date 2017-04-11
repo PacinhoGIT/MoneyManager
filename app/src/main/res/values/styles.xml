@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#32CD32</item>
+        <item name="colorPrimaryDark">#000</item>
+        <item name="colorAccent">#32CD32</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="NavigationViewStyle">
+        <item name="android:textSize">25sp</item> <!-- menu item text size-->
+        <item name="android:listPreferredItemHeight">60dp</item>
+        <item name="android:layout_marginBottom">100dp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>
