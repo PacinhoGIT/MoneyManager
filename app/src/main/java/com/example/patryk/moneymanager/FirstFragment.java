@@ -284,7 +284,7 @@ public class FirstFragment extends Fragment {
 
                         if (kosztD == 0) {
                             if (err == 0) {
-                                ed4.setError("Wartosc nie moze byc 0 !");
+                                ed4.setError("Wartosc nie moze byc 0 !!");
                             }
                         }
 
